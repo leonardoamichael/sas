@@ -22,7 +22,10 @@ define("WWW_ROOT", $doc_root);
 
 require_once('functions.php');
 
-  // Add require_once statements here for database and query functions
+require_once('db_credentials.php');
+require_once('database.php'); 
+require_once('query_functions.php');
 
  // Add db_connect() connection. Be sure to follow the method used
 // in the tutorial.
+$db = db_connect();
