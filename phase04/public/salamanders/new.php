@@ -29,12 +29,16 @@ if($test == '404') {
       </dl>
       <dl>
         <dt>Habitat</dt>
-        <dd><input type="text" name="habitat" value="" /></dd>
+        <dd>
+          <textarea name="habitat" rows="4" cols="50"></textarea>
+        </dd>
       </dl>
-      <dl>
-        <dt>Description</dt>
-        <dd><input type="text" name="description" value="" /></dd>
-      </dl>
+  <dl>
+    <dt>Description</dt>
+    <dd>
+      <textarea name="description" rows="4" cols="50"></textarea>
+    </dd>
+  </dl>
       <div id="operations">
         <input type="submit" value="Create Salamander" />
       </div>

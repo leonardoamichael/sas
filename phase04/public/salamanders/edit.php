@@ -46,14 +46,18 @@ if(is_post_request()) {
         <dd><input type="text" name="name" value="<?php echo h($salamander['name']); ?>" /></dd>
       </dl>
       <dl>
-        <dt>Habitat</dt>
-        <dd><input type="text" name="habitat" value="<?php echo h($salamander['habitat']); ?>" /></dd>
+  <dt>Habitat</dt>
+  <dd>
+    <textarea name="habitat" rows="4" cols="50"><?php echo h($salamander['habitat']); ?></textarea>
+  </dd>
 </dl>
 
 <dl>
   <dt>Description</dt>
-  <dd><input type="text" name="description" value="<?php echo h($salamander['description']); ?>" /></dd>
-      </dl>
+  <dd>
+    <textarea name="description" rows="4" cols="50"><?php echo h($salamander['description']); ?></textarea>
+  </dd>
+</dl>
       <div id="operations">
         <input type="submit" value="Edit Subject" />
       </div>
